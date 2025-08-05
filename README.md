@@ -18,16 +18,6 @@ cargo run -- --from-ip 192.168.1.158 --to-port 33741 33742
 # [INFO ] forwarding to 127.0.0.1:33742
 ```
 
-### Connect to a PlayStation at `192.168.1.158` and forward packets to port `33741` (the default)
-
-```sh
-cargo run -- -f 192.168.1.158
-
-# [INFO ] listening for packets on 0.0.0.0:33740
-# [INFO ] connecting to PlayStation on 192.168.1.158:33739
-# [INFO ] forwarding to 127.0.0.1:33741
-```
-
 ### View a help message
 
 ```sh
