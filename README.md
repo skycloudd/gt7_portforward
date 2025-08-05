@@ -2,8 +2,9 @@
 
 A simple Rust program to forward GT7 telemetry packets to (multiple) ports.
 
-> [!IMPORTANT] You need to have Rust installed to run this software. This can
-> (and should) be done with [rustup](https://rustup.rs/).
+> [!IMPORTANT]
+> You need to have Rust installed to run this software. This can (and should) be
+> done with [rustup](https://rustup.rs/).
 
 ## Usage
 
