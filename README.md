@@ -2,15 +2,14 @@
 
 A simple Rust program to forward GT7 telemetry packets to (multiple) ports.
 
-> [!IMPORTANT]
-> You need to have Rust installed to run this software. This can (and should) be
-> done with [rustup](https://rustup.rs/).
+> [!IMPORTANT] You need to have Rust installed to run this software. This can
+> (and should) be done with [rustup](https://rustup.rs/).
 
 ## Usage
 
+### Connect to a PlayStation at `192.168.1.158` and forward packets to ports `33741` and `33742`
+
 ```sh
-# Connect to a PlayStation at 192.168.1.158
-# and forward packets to ports 33741 and 33742
 cargo run -- --from-ip 192.168.1.158 --to-port 33741 33742
 
 # [INFO ] listening for packets on 0.0.0.0:33740
@@ -19,9 +18,9 @@ cargo run -- --from-ip 192.168.1.158 --to-port 33741 33742
 # [INFO ] forwarding to 127.0.0.1:33742
 ```
 
+### Connect to a PlayStation at `192.168.1.158` and forward packets to port `33741` (the default)
+
 ```sh
-# Connect to a PlayStation at 192.168.1.158
-# and forward packets to port 33741 (the default)
 cargo run -- -f 192.168.1.158
 
 # [INFO ] listening for packets on 0.0.0.0:33740
@@ -29,8 +28,9 @@ cargo run -- -f 192.168.1.158
 # [INFO ] forwarding to 127.0.0.1:33741
 ```
 
+### View a help message
+
 ```sh
-# View a help message
 cargo run -- --help
 
 # Usage: gt7_portforward [OPTIONS] --from-ip <IP>
@@ -44,9 +44,9 @@ cargo run -- --help
 #   -V, --version            Print version
 ```
 
+### Install the program for easier access. You need to have `$HOME/.cargo/bin` in your PATH for this to work.
+
 ```sh
-# install the program for easier access.
-# You need to have $HOME/.cargo/bin in your PATH for this to work
 cargo install --path .
 
 #   Installing gt7_portforward v0.1.0 (/Users/kyra/rust/gt7_portforward)
